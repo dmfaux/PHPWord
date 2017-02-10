@@ -382,7 +382,7 @@ class Html
      * @return null
      */
     private static function parseLineBreak($element) {
-        $element->addTextBreak();
+        $element->addTextBreak(1, null, ['spacing' => -300]);
         return null;
     }
 }
